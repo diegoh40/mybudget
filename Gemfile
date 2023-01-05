@@ -8,6 +8,9 @@ gem "rails", "~> 7.0.4"
 
 gem "devise"
 
+gem "image_processing", ">= 1.2"
+
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
