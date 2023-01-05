@@ -1,15 +1,202 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(241, 243, 242);
+}
+
+li {
+  list-style: none;
+}
+
+.back-btn {
+  width: 50px;
+}
+
+.splash_screen_heading {
+  text-align: center;
+  margin: 100px 0 300px 0;
+  color: rgb(74, 83, 88);
+}
+
+.splash_page_btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splash_btn {
+  padding: 10px 80px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.splash_login_btn {
+  background-color: rgb(57, 121, 195);
+  color: white;
+}
+
+.splash_reg_btn {
+  color: rgb(146, 146, 146);
+}
+
+.navbar {
+  background: rgb(53, 117, 189);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 40px;
+  position: relative;
+}
+
+.nav_heading {
+  color: white;
+}
+
+#user_name,
+#user_email,
+#user_password,
+#user_password_confirmation {
+  width: 100%;
+  height: 50px;
+  text-indent: 10px;
+  font-size: 15px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  outline: none;
+}
+
+#user_name {
+  border-bottom: none;
+}
+
+#user_password,
+#user_password_confirmation {
+  border-top: none;
+}
+
+.empty {
+  display: none;
+}
+
+.login_btn,
+.sign_up_btn {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+}
+
+.sign_out_btn {
+  margin-right: 12px;
+}
+
+.login_btn,
+.sign_up_btn,
+.sign_out_btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login_page_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.forgot-password-link {
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+}
+
+.notice,
+.alert {
+  font-size: 15px;
+  text-align: center;
+}
+
+.categories_directory,
+.transactions-container-padding {
+  margin-bottom: 50px;
+}
+
+.categories_container_padding,
+.transactions-container-padding {
+  padding: 10px;
+}
+
+.categories_container,
+.transactions-container {
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 20px;
+  background: white;
+}
+
+.categories_container,
+.category-detail-container,
+.category_form,
+.transaction-form,
+.transactions-container {
+  display: flex;
+}
+
+.category-detail-container {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.category_img {
+  width: 100px;
+  height: 100px;
+}
+
+#category_image {
+  margin-bottom: 20px;
+}
+
+.create_category_btn,
+.transaction-create-btn {
+  background-color: rgb(100, 182, 37);
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.category_form,
+.transaction-form {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.category_form_field,
+.transaction_form_field {
+  height: 30px;
+  margin-bottom: 12px;
+  text-indent: 5px;
+}
+
+.category_form_btn,
+.transaction_form_btn {
+  background-color: rgb(46, 101, 182);
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
