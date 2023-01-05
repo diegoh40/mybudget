@@ -1,0 +1,10 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'TRANSACTIONS', back_path: categories_path } %>
+<ul class='transactions-container-padding'>
+<% @category.transactions.each do |transaction| %>
+  <li class='transactions-container'>
+    <span><%= transaction.name %></span>
+    <span>$<%= transaction.amount %></span>
+  </li>
+<% end %>
+</ul>
+<%= link_to "Create Transaction", new_category_transaction_path(@category), class: 'transaction-create-btn' %>

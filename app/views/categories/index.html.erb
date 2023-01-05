@@ -1,0 +1,22 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'CATEGORIES', back_path: categories_path } %>
+<ul class="categories_directory">
+<% @categories.includes(:transactions).each do |cate| %>
+  <li class="categories_container_padding">
+    <ul class="categories_container">
+      <li class="category_img">
+        <%= image_tag(cate.image, class:"category_img") if cate.image.attached? %>
+      </li>
+      <li class="category-detail-container">
+        <span><%= link_to cate.name, category_transactions_path(category_id: cate.id) %></span>
+        <span><%= cate.created_at.strftime("%d-%m-%Y") %></span>
+      </li>
+      <li class="category_amount_container">
+        <span>$<%= cate.total_transactions_amount %></span>
+      </li>
+    </ul>
+  </li>
+<% end %>
+</ul>
+<div class: 'create_category_btn_container'>
+  <%= link_to "Create Category", new_category_path, class: 'create_category_btn' %>
+</div>
