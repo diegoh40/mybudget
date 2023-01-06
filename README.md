@@ -175,6 +175,7 @@ To run tests, run the following command:
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
+Original design idea by Gregoire Vella.
 
 ## ⭐️ Show your support <a name="support"></a>
 
