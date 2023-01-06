@@ -1,7 +1,7 @@
 databases:
   - name: mybudget
     databaseName: capstone
-    user: postgres
+    user: mybudget
 
 services:
   - type: web
