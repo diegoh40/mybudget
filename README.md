@@ -138,9 +138,6 @@ To run the project, copay the following URL:
 
 https://github.com/diegoh40/mybudget.git
 
-> Explanation of project.
-
-- [Video presentation.](https://www.loom.com/share/f74e52f4d5ae424fa6bd84db070d66c7)
 
 <!--
 Example command:
