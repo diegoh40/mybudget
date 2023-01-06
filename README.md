@@ -160,7 +160,7 @@ To run tests, run the following command:
 <!-- AUTHORS -->
 ## Live Demo
 
-[Click me](https://mybudget-c3wl.onrender.com/)
+[Click me]()
 
 ## 👥 Authors <a name="authors"></a>
 
